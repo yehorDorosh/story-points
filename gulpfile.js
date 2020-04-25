@@ -69,7 +69,10 @@ gulp.task('styles', () => {
 });
 
 gulp.task('scripts', () => {
-  return gulp.src(paths.src.scripts, {since: gulp.lastRun('scripts')})
+  return gulp.src(
+    ['node_modules/babel-polyfill/dist/polyfill.js',
+    paths.src.scripts],
+    {since: gulp.lastRun('scripts')})
     .pipe(newer(paths.dest.scripts))
     .pipe(debug({title: 'scripts'}))
     .pipe(gulpIf(isDev, sourcemaps.init()))

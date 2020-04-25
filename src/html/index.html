@@ -5,10 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <script src="js/polyfill.js" defer></script>
   <link rel="stylesheet" href="styles/home-page.css">
 </head>
 
 <body>
+  <h1 class="page-title">For how many story points will you do this task?</h1>
+  <main>
+    <div class="center-hv bordered ball">
+      <div class="ball__headline">Shake me!</div>
+      <div class="noselect bordered ball__value">0</div>
+      <span class="ball__shadow"></span>
+    </div>
+    <div class="slider">
+      <ul  class="slider__row">
+        <li class="slider__point slider__point--active">1</li>
+        <li class="slider__point">2</li>
+        <li class="slider__point">3</li>
+        <li class="slider__point">5</li>
+        <li class="slider__point">8</li>
+        <li class="slider__point">13</li>
+        <li class="slider__point slider__point--active">21</li>
+      </ul>
+    </div>
+  </main>
 </body>
 <script src="js/app.js" defer></script>
 </html>
