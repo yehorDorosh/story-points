@@ -30,7 +30,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "stylelint": "^13.2.1",
     "stylelint-config-standard": "^20.0.0"
   },
